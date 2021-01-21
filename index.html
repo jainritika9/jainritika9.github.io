@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang=en> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Todo-List</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/todo.css">
+   
+</head>
+<body>
+   
+        <div id="header" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <p id="todo">To-do List</p>
+        <div class="container2">
+          <div id="one" class=" col-sm-2 col-md-4 col-4"></div>
+          <div id="two" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="date"><p id="dates">date</p><p id="time">time</p></div>
+            <div class="add-to-do">
+                <div class="four">
+                  <button type="submit" onclick="buttonpress()">ADD</button>
+                  <input type="text" id="input" placeholder="Enter..">
+                </div>
+                <div class="five">
+                <label for="filterBy">Filter By:</label>
+                <select name="filterBy" class="filter-todo">
+                  <option value="all">All</option>
+                  <option value="completed">Completed</option>
+                  <option value="incompleted">Incompleted</option>
+                </select>
+                <div class="clear">
+                    <button onclick="clearup()"><i class="fa fa-refresh"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <ul id="list"></ul>
+              </ul>
+            </div>
+           
+          </div>
+          <div id="three" class=" col-sm-2 col-md-4 col-lg-4"></div>
+        </div>
+        </div>
+        <script src="js/todo.js"></script>
+       
+</body>
+</html>

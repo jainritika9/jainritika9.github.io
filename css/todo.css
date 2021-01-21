@@ -1,0 +1,179 @@
+  
+@font-face{
+    font-family: "myfont";
+    src: url("fonts/CountrysideTwo-r9WO.ttf");
+}
+
+body{
+    margin:40px;;
+    padding:0;
+    background-image: linear-gradient(to bottom right ,rgb(4, 48, 59),rgb(80, 173, 235));
+}
+#todo{
+    font-family: "myfont";
+    color: blanchedalmond;
+    padding-top: 15px;;
+    font-size: 70px;
+}
+#header{
+    text-align: center;
+    font-size: 50px;
+    color:black;
+} 
+#date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 4;
+    padding-left: 10px;
+    padding-right:10px;
+    background-color: rgb(5, 146, 146);
+    color: black;
+    font-size:25px; 
+    
+}
+#two{
+    display: block;
+    text-align: center;
+}
+/* ------------ content ------------ */
+.content{
+    padding:4px;
+    height: 350px;
+    max-height:350px;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    margin:4px;
+    padding:2px;
+    
+    
+    
+}
+.item{
+   
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    background-color: lightblue;
+    padding: 3px;
+    margin: 5px;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0px;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+  
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : slategray;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+    padding: 4px;
+    flex:1;
+    background-color: turquoise;
+    font-size: 12px;
+    
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+button{
+    text-align: center;
+    padding:4px;
+    font-size: 20px;
+   
+    border:0;
+    background-color :lightgrey;
+}
+button:hover{
+    background-color:black;
+    color:white;
+}
+.four{
+    display:flex;
+}
+.five{
+    display:flex;
+    align-items: right;
+    font-size:17px;
+}
+label{
+    color: black;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-top:7px;
+    padding-right: 4px;;
+    
+}
+select{
+    height:40px;
+}
+.add-to-do{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size:17px;
+}
+@media screen and (max-width:669px){
+    body{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  
+    .add-to-do{
+        display: block;
+        text-align: center;
+        padding: 8px;
+    }
+    .five,.four{
+        padding-left: 25px;
+        
+    }
+    .four{
+        padding-bottom: 10px;
+    }
+    input{
+        width: 300px;
+    }
+    label{
+        padding-right: 20px;;
+    }
+    select{
+        width: 220px;
+    }
+}
